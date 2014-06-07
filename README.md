@@ -22,9 +22,9 @@ TFSAPIWrapperLib.TFSAPI tfsApi = new TFSAPIWrapperLib.TFSAPI(new Uri(tfsURI), tf
 Create a new BUG Work Item and specify the a value for “Repro Steps” field.
 ```c#
 Dictionary<string, object> itemValues = new Dictionary<string, object>();
-            itemValues.Add("Repro Steps", "Step 1: Do Login");
+itemValues.Add("Repro Steps", "Step 1: Do Login");
 
-            var newItem = tfsApi.CreateWorkItem("BUG", "New bug for product X", "New bug detected at...", itemValues);
+var newItem = tfsApi.CreateWorkItem("BUG", "New bug for product X", "New bug detected at...", itemValues);
 ```
 ###Delete a Work Item
 Delete by ID and get a Boolean.
