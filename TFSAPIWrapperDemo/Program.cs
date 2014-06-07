@@ -9,7 +9,7 @@ namespace TFSAPIWrapperDemo
     {
         static void Main(string[] args)
         {
-            string tfsURI = "https://rcapps.visualstudio.com/DefaultCollection";
+            string tfsURI = "https://{HERE YOUR ACCOUNT}.visualstudio.com/DefaultCollection";
             string tfsProjectName = "STUFFS";
 
             TFSAPIWrapperLib.TFSAPI tfsApi = new TFSAPIWrapperLib.TFSAPI(new Uri(tfsURI), tfsProjectName);
